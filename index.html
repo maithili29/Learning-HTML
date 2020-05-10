@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML cheat sheet</title>
+</head>
+<body>
+    
+    < <!-- The two pages are linked together ie cheat sheet and bolg-->
+    <a href="blog.html">Go to blog</a>
+    <hr>
+
+    <!-- Headings -->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+    <!-- Paragraph
+    strong is for making it bold 
+    em means emphasis i.e making that particular text as italic -->
+    <p> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus enim sequi</strong> vel veritatis nesciunt veniam excepturi sit debitis perferendis officiis deleniti numquam, libero aperiam. Fuga fugiat assumenda enim vitae cumque. Nostrum et <em>delectus voluptate earum</em> quas voluptatum quaerat consequuntur laborum repellat. Inventore id aspernatur magnam voluptatem sed ab debitis quae.
+    </p>
+    <!-- here a herf means hyperlink ie if we click that particular word where a href is used then it will open google or any site which you will put in that hyperlink as shown below and target is used for showing that site on the new page -->
+    <p> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus <a href="http://google.com" target="_blank">enim sequi</a> vel veritatis nesciunt veniam excepturi sit debitis perferendis officiis deleniti numquam, libero aperiam. Fuga fugiat assumenda enim vitae cumque. Nostrum et delectus voluptate earum quas voluptatum quaerat consequuntur laborum repellat. Inventore id aspernatur magnam voluptatem sed ab debitis quae.
+    </p>
+
+    <!-- lists -->
+    <!-- unordered list-->
+    <ul>                                                                             
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+
+    <!-- ordered list-->
+    <ol>                                                                             
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ol>
+
+    <!-- Table  -->
+    <table>
+        <!--table head-->
+        <thead>
+            <!-- table row-->                                                                      
+            <tr>
+                <!-- table head-->                                                                     
+                <th>Name</th>                                                        
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <!-- table body-->
+        <tbody>                                                                                    
+            <tr>
+                <!-- table data -->
+                <td>Maithili Mahajan</td>                                            
+                <td>maithili@something.com</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Sara William</td>
+                <td>swilliam@something.com</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>John David</td>
+                <td>jdavid@something.com</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- break line -->
+    <br>
+    <!-- horizontal line-->                                                                            
+    <hr>                                                                            
+    <br>
+
+    <!-- Forms
+    we have created a form using form tag. we have taken inputs from user with input tag. The type of input tag varies on the input to be taken -->
+    <form action="process.php" method="POST">
+        
+        <div>
+            <label>First Name</label>
+            <!--The placeholder attribute specifies a short hint that describes the expected value of an input field eg. a sample value or a short description of the expected format-->
+            <input type = "text" name = "firstName" placeholder ="Enter first name">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type = "text" name = "lastName">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type = "email" name = "email">
+        </div>
+        <br>
+        <div>
+            <label>Message</label>
+            <textarea name = "message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type = "number" name = "age" value = "30">
+        </div>
+        <br>
+        <div>
+            <label>Birthdate:</label>
+            <input type = "date" name = "birthday"> 
+        </div>
+        <br>
+        <input type = "submit" name = "submit" value = "Submit">
+    </form>
+
+    <br>
+
+    <!-- Button -->
+    <button>Click Me</button>
+
+    <br>
+
+    <!-- Image-->
+    <a href="Images/sample.jpg">
+        <img src="Images/sample.jpg" alt="My sample image" width="200">
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="https://github.com/maithili29">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure a fugit inventore asperiores deserunt possimus veniam porro facere ipsam sapiente delectus quae voluptas earum eos ut deleniti aspernatur harum commodi, rem cumque molestias autem vero! Dolore, incidunt esse earum voluptates, hic, ex repudiandae mollitia vero alias optio architecto eius ipsam.
+
+        <p>
+            <!-- here abbr is for abbreviation-->
+            The <abbr title="World Wide Web">WWW</abbr> is awesome
+        </p>
+    </blockquote>
+
+    <div style = "margin-top: 500px;"></div>
+</body>
+</html>
